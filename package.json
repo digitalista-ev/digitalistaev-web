@@ -3,15 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "set NODE_ENV=development&&next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "next": "15.3.4",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "next": "15.3.4"
+    "react-dom": "^19.0.0"
   },
-  "homepage": "https://digitalista-ev.github.io/digitalistaev-web/"
+  "homepage": "https://digitalista-ev.github.io/digitalistaev-web/",
+  "devDependencies": {
+    "cross-env": "^7.0.3"
+  }
 }

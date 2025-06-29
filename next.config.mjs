@@ -1,9 +1,9 @@
 /** @type {import('next').NextConfig} */
-const isProd = process.env.NODE_ENV === 'production';
+const isDev = process.env.NODE_ENV === 'development';
 
 const nextConfig = {
-    basePath: isProd ? '/digitalistaev-web' : '',
-    assetPrefix: isProd ? '/digitalistaev-web/' : '',
+    basePath: isDev ? '' : '/digitalistaev-web',
+    assetPrefix: isDev ? '' : '/digitalistaev-web/',
     images: {
         unoptimized: true, // нужно для next export
     },
