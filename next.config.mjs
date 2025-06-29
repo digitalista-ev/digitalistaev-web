@@ -5,7 +5,10 @@ const nextConfig = {
     basePath: isDev ? '' : '/digitalistaev-web',
     assetPrefix: isDev ? '' : '/digitalistaev-web/',
     images: {
-        unoptimized: true, // нужно для next export
+        unoptimized: true,
+    },
+    env: {
+        NEXT_PUBLIC_BASE_PATH: isDev ? '' : '/digitalistaev-web',
     },
 };
 
