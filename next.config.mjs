@@ -1,4 +1,4 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = { basePath: '/digitalistaev-web', assetPrefix: '/digitalistaev-web' };
 
-export default { nextConfig, basePath: '/digitalistaev-web' };
+export default nextConfig;
