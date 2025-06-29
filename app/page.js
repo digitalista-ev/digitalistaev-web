@@ -12,6 +12,7 @@ export default function Home() {
           width={180}
           height={38}
           priority
+          unoptimized
         />
         <ol>
           <li>
