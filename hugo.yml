@@ -1,0 +1,4 @@
+baseURL: https://digitalista-ev.github.io/digitalistaev-web/
+languageCode: en-us
+title: Digitalista e.V. Test Site
+theme: ["PaperMod"]
