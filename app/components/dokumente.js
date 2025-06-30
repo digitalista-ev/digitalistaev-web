@@ -9,7 +9,7 @@ export default function Dokumente() {
             <ul>
                 <li>
                     <a
-                        href="/wp-content/uploads/2023/02/Satzung-2022-08-23.pdf"
+                        href="/Satzung-2022-08-23.pdf"
                         target="_blank"
                         rel="noreferrer noopener"
                     >
@@ -17,7 +17,7 @@ export default function Dokumente() {
                     </a>
                 </li>
                 <li>
-                    <a href="/wp-content/uploads/2023/02/Beitragsordnung-Digitalista-e.V.-2023-02-13.pdf">
+                    <a href="/Beitragsordnung-Digitalista-e.V.-2023-02-13.pdf">
                         Beitragsordnung
                     </a>
                 </li>

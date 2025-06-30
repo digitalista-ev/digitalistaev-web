@@ -13,7 +13,7 @@ export default function Projekte() {
                 rel="noopener noreferrer"
             >
                 <Image
-                    src="https://digitalista-ev.de/wp-content/uploads/2023/02/image_2023-02-13_203311065.png"
+                    src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/image_2023-02-13_203311065.png`}
                     alt="Digital Volunteers"
                     width={100}
                     height={100}
