@@ -9,7 +9,7 @@ export default function Dokumente() {
             <ul>
                 <li>
                     <a
-                        href="/Satzung-2022-08-23.pdf"
+                        href={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/Satzung-2022-08-23.pdf`}
                         target="_blank"
                         rel="noreferrer noopener"
                     >
@@ -17,12 +17,16 @@ export default function Dokumente() {
                     </a>
                 </li>
                 <li>
-                    <a href="/Beitragsordnung-Digitalista-e.V.-2023-02-13.pdf">
+                    <a
+                        href={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/Beitragsordnung-Digitalista-e.V.-2023-02-13.pdf`}
+                        target="_blank"
+                        rel="noreferrer noopener"
+                    >
                         Beitragsordnung
                     </a>
                 </li>
                 <li>Aufnahmeantrag</li>
             </ul>
-        </section>
+        </section >
     );
 }
