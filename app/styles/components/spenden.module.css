@@ -1,0 +1,11 @@
+.section {
+    margin: 2rem 0;
+}
+
+.section a {
+    color: #007aff;
+}
+
+.section a:hover {
+    text-decoration: underline;
+}

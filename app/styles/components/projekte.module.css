@@ -1,0 +1,34 @@
+.section {
+    margin: 2rem 0;
+}
+
+.infobox {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    transition: box-shadow 0.3s;
+    text-decoration: none;
+}
+
+.infobox:hover {
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.2);
+}
+
+.infobox img {
+    margin-right: 1rem;
+}
+
+@media (max-width: 600px) {
+    .infobox {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .infobox img {
+        margin: 0 0 0.5rem 0;
+    }
+}

@@ -8,7 +8,7 @@ const nextConfig = {
         unoptimized: true,
     },
     env: {
-        NEXT_PUBLIC_BASE_PATH: isDev ? '' : '/digitalistaev-web',
+        NEXT_PUBLIC_BASE_PATH: isDev ? '' : '/digitalistaev-web', // src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/next.svg`}
     },
 };
 

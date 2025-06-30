@@ -1,0 +1,51 @@
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1rem;
+  font-family: sans-serif;
+}
+
+.logo img {
+  max-width: 100%;
+  height: auto;
+}
+
+.section {
+  margin: 2rem 0;
+}
+
+.infobox {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  border-radius: 5px;
+  padding: 1rem;
+  transition: box-shadow 0.3s ease;
+}
+
+.infobox:hover {
+  box-shadow: 0 0 14px rgba(0, 0, 0, 0.2);
+}
+
+.infobox-text h3 {
+  margin: 0;
+  color: #007aff;
+}
+
+ul {
+  padding-left: 1.5rem;
+}
+
+ul li {
+  margin: 0.5rem 0;
+}
+
+a {
+  color: #007aff;
+}
+
+a:hover {
+  text-decoration: underline;
+}
