@@ -6,9 +6,9 @@ export default function Header() {
         <header className={styles.header}>
             <h1>Digitalista e.V.</h1>
             <nav>
-                <a href="#projekte">Projekte</a>
-                <a href="#spenden">Spenden</a>
-                <a href="#dokumente">Dokumente</a>
+                <a href="/#projekte">Projekte</a>
+                <a href="/#spenden">Spenden</a>
+                <a href="/#dokumente">Dokumente</a>
             </nav>
         </header>
     );

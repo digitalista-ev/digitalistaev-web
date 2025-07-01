@@ -8,17 +8,17 @@
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://digitalista-ev.de/projekte</loc>
+    <loc>https://digitalista-ev.de/#projekte</loc>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://digitalista-ev.de/spenden</loc>
+    <loc>https://digitalista-ev.de/#spenden</loc>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://digitalista-ev.de/dokumente</loc>
+    <loc>https://digitalista-ev.de/#dokumente</loc>
     <priority>0.7</priority>
     <changefreq>monthly</changefreq>
   </url>
