@@ -6,7 +6,7 @@ export default function Footer() {
         <footer className={styles.footer}>
             <p>
                 &copy; {new Date().getFullYear()} Digitalista e.V. |{" "}
-                <a href="/datenschutzerklaerung">Datenschutzerklärung</a>
+                <a href={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/datenschutzerklaerung`}>Datenschutzerklärung</a>
             </p>
         </footer>
     );
