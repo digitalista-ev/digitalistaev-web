@@ -6,7 +6,7 @@ author: "Digitalista e.V."
   
 ## Unsere Projekte
 
-[![Digital Volunteers](.{{github_dev_path}}/image_2023-02-13_203311065.png)](https://digitalvolunteers.de/)
+[![Digital Volunteers]({{github_dev_path}}/image_2023-02-13_203311065.png)](https://digitalvolunteers.de/)
 
 **Digital Volunteers**
 
