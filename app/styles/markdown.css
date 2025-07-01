@@ -1,0 +1,13 @@
+.prose {
+    font-size: 110%;
+    line-height: 120%;
+}
+
+.prose a img {
+    width: 33.3333vw;
+    height: auto;
+    display: block;
+    max-width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}

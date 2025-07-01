@@ -8,23 +8,13 @@
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://digitalista-ev.de/#projekte</loc>
-    <priority>0.8</priority>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>https://digitalista-ev.de/#spenden</loc>
-    <priority>0.8</priority>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>https://digitalista-ev.de/#dokumente</loc>
-    <priority>0.7</priority>
-    <changefreq>monthly</changefreq>
+    <loc>https://digitalista-ev.de/impressum</loc>
+    <priority>0.5</priority>
+    <changefreq>yearly</changefreq>
   </url>
   <url>
     <loc>https://digitalista-ev.de/datenschutzerklaerung</loc>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
     <changefreq>yearly</changefreq>
   </url>
 </urlset>
