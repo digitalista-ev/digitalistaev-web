@@ -4,7 +4,11 @@ import path from "path";
 import matter from "gray-matter";
 import { marked } from "marked";
 
-export default async function DatenschutzPage() {
+export const metadata = {
+    title: "Datenschutzerklärung",
+};
+
+export default async function DatenschutzerklaerungPage() {
     const filePath = path.join(process.cwd(), "app", "datenschutzerklaerung", "page.md");
     const fileContent = fs.readFileSync(filePath, "utf-8");
     const { content } = matter(fileContent);
