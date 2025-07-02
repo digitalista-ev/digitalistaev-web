@@ -1,19 +1,12 @@
 import React from "react";
-import fs from "fs";
-import path from "path";
-import matter from "gray-matter";
-import { marked } from "marked";
+import { loadMarkdown } from "../components/loadMarkdown";
 
-export const metadata = {
-    title: "Impressum",
-};
+export const dynamic = 'force-static';
+export const metadata = { title: "Impressum" }; // Impressum
 
-export default async function DatenschutzerklaerungPage() {
-    const filePath = path.join(process.cwd(), "app", "impressum", "page.md");
-    const fileContent = fs.readFileSync(filePath, "utf-8");
-    const { content } = matter(fileContent);
-    const html = marked(content);
+const html = loadMarkdown("impressum/page.md"); // impressum
 
+export default function ImpressumPage() {
     return (
         <main className="prose mx-auto p-4">
             <div dangerouslySetInnerHTML={{ __html: html }} />

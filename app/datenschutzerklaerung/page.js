@@ -1,19 +1,12 @@
 import React from "react";
-import fs from "fs";
-import path from "path";
-import matter from "gray-matter";
-import { marked } from "marked";
+import { loadMarkdown } from "../components/loadMarkdown";
 
-export const metadata = {
-    title: "Datenschutzerklärung",
-};
+export const dynamic = 'force-static';
+export const metadata = { title: "Datenschutzerklärung" }; // Datenschutzerklärung
 
-export default async function DatenschutzerklaerungPage() {
-    const filePath = path.join(process.cwd(), "app", "datenschutzerklaerung", "page.md");
-    const fileContent = fs.readFileSync(filePath, "utf-8");
-    const { content } = matter(fileContent);
-    const html = marked(content);
+const html = loadMarkdown("datenschutzerklaerung/page.md"); // datenschutzerklaerung
 
+export default function DatenschutzerklaerungPage() {
     return (
         <main className="prose mx-auto p-4">
             <div dangerouslySetInnerHTML={{ __html: html }} />
