@@ -6,7 +6,7 @@ export default function Logo() {
     return (
         <figure className={styles.logo}>
             <Image
-                src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/logo-1-1024x430.png`}
+                src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/logo-1.png`}
                 alt="Digitalista Logo"
                 width={1024}
                 height={430}
