@@ -4,6 +4,7 @@ import Footer from "./components/footer";
 import styles from "./styles/layout.module.css";
 
 const faviconUrl = `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/favicon.ico`;
+const imageUrl = `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/og-image.jpg`;
 
 export const metadata = {
   metadataBase: new URL("https://digitalista-ev.de"),
@@ -18,7 +19,7 @@ export const metadata = {
     url: "https://digitalista-ev.de",
     images: [
       {
-        url: "https://digitalista-ev.de/og-image.jpg",
+        url: imageUrl,
       },
     ],
   },
