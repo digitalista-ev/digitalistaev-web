@@ -5,7 +5,7 @@ import styles from "../styles/components/projekte.module.css";
 export default function Projekte() {
     return (
         <section id="projekte" className={styles.section}>
-            <h3>Unsere Projekte</h3>
+            <h2>Unsere Projekte</h2>
             <a
                 className={styles.infobox}
                 href="https://digitalvolunteers.de/"
@@ -19,7 +19,7 @@ export default function Projekte() {
                     height={100}
                 />
                 <div>
-                    <h3>Digital Volunteers</h3>
+                    <h2>Digital Volunteers</h2>
                 </div>
             </a>
         </section>

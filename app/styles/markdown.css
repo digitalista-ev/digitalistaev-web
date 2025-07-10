@@ -1,10 +1,10 @@
 .prose {
     font-size: 110%;
-    line-height: 120%;
+    line-height: 140%;
 }
 
 .prose a img {
-    width: 33.3333vw;
+    width: 10.0vw;
     height: auto;
     display: block;
     max-width: 100%;

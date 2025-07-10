@@ -3,14 +3,16 @@ import Header from "./components/header";
 import Footer from "./components/footer";
 import styles from "./styles/layout.module.css";
 
+const faviconUrl = `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/favicon.ico`;
+
 export const metadata = {
   metadataBase: new URL("https://digitalista-ev.de"),
-  title: "Digitalista e.V.",
+  title: "Digitalista – Machinery help for humans",
   description: "Digitalista - Unsere Projekte und Dokumente",
   keywords: ["Digitalista", "Ehrenamt", "Digitalisierung", "Projekte", "Spenden", "Verein"],
   authors: [{ name: "Digitalista e.V." }],
   openGraph: {
-    title: "Digitalista e.V.",
+    title: "Digitalista – Machinery help for humans",
     description: "Digitalista - Unsere Projekte und Dokumente",
     type: "website",
     url: "https://digitalista-ev.de",
@@ -22,13 +24,13 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Digitalista e.V.",
+    title: "Digitalista – Machinery help for humans",
     description: "Digitalista - Unsere Projekte und Dokumente",
     images: ["https://digitalista-ev.de/og-image.jpg"],
   },
   icons: {
     icon: [
-      { url: "/favicon.ico", type: "image/x-icon" },
+      { url: faviconUrl, type: "image/x-icon" },
     ],
   },
   alternates: {
