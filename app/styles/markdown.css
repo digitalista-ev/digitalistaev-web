@@ -11,3 +11,15 @@
     border-radius: 8px;
     transition: transform 0.3s ease;
 }
+
+@media (min-width: 256px) {
+    .prose a img {
+        width: 40.0vw;
+    }
+}
+
+@media (min-width: 1024px) {
+    .prose a img {
+        width: 15.0vw;
+    }
+}

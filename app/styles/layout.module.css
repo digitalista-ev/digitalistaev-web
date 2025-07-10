@@ -8,3 +8,15 @@
     margin: 0 25vw;
     padding: 1rem;
 }
+
+@media (min-width: 256px) {
+    .main {
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 1024px) {
+    .main {
+        margin: 0 25vw;
+    }
+}

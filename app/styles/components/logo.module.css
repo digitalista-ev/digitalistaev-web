@@ -1,6 +1,19 @@
 .logo {
   display: block;
   margin: 2rem auto;
-  width: 650px;
-  height: 273px;
+  width: 50vw;
+  max-width: 650px;
+  height: auto;
+}
+
+@media (min-width: 256px) {
+  .logo {
+    width: 90vw;
+  }
+}
+
+@media (min-width: 1024px) {
+  .logo {
+    width: 50vw;
+  }
 }
