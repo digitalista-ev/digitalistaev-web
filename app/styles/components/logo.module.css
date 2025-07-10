@@ -6,14 +6,16 @@
   height: auto;
 }
 
-@media (min-width: 256px) {
+@media (min-width: 1px) {
   .logo {
     width: 90vw;
+    max-width: none;
   }
 }
 
 @media (min-width: 1024px) {
   .logo {
     width: 50vw;
+    max-width: 650px;
   }
 }

@@ -12,9 +12,9 @@
     transition: transform 0.3s ease;
 }
 
-@media (min-width: 256px) {
+@media (min-width: 1px) {
     .prose a img {
-        width: 40.0vw;
+        width: 30.0vw;
     }
 }
 
