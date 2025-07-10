@@ -27,7 +27,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Digitalista – Machinery help for humans",
     description: "Digitalista - Unsere Projekte und Dokumente",
-    images: ["https://digitalista-ev.de/og-image.jpg"],
+    images: [imageUrl],
   },
   icons: {
     icon: [
