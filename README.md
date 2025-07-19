@@ -34,3 +34,50 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+# WICHTIG
+
+Da während der Entwicklung die Website unter der Adresse http://localhost:3000/ verfügbar ist,  
+und die Adresse auf GitHub Pages – https://digitalista-ev.github.io/digitalistaev-web/ – lautet,  
+musste wegen des Pfades `/digitalistaev-web/` folgende Konfiguration vorgenommen werden:
+
+[https://github.com/digitalista-ev/digitalistaev-web/blob/main/next.config.mjs](https://github.com/digitalista-ev/digitalistaev-web/blob/main/next.config.mjs)
+
+```js
+/** @type {import('next').NextConfig} */
+const isDev = process.env.NODE_ENV === 'development';
+
+const nextConfig = {
+    basePath: isDev ? '' : '/digitalistaev-web',
+    assetPrefix: isDev ? '' : '/digitalistaev-web/',
+    images: {
+        unoptimized: true,
+    },
+    env: {
+        NEXT_PUBLIC_BASE_PATH: isDev ? '' : '/digitalistaev-web', // src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/next.svg`}
+    },
+};
+
+export default nextConfig;
+```
+
+Vor der Anbindung der Domain https://digitalista-ev.de/
+muss die Datei next.config.mjs ungefähr wie folgt angepasst werden:
+
+```js
+/** @type {import('next').NextConfig} */
+const isDev = process.env.NODE_ENV === 'development';
+
+const nextConfig = {
+    basePath: isDev ? '' : '',
+    assetPrefix: isDev ? '' : '/',
+    images: {
+        unoptimized: true,
+    },
+    env: {
+        NEXT_PUBLIC_BASE_PATH: isDev ? '' : '', 
+    },
+};
+
+export default nextConfig;
+```
